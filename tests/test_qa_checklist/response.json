@@ -1,0 +1,184 @@
+{
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+        "aggregateprogress": {
+            "progress": 0,
+            "total": 0
+        },
+        "aggregatetimeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "aggregatetimespent": null,
+        "assignee": {
+            "active": true,
+            "avatarUrls": {
+                "16x16": "https://www.gravatar.com/avatar/5c69e27e1411619a01af4a9d48f0b4c2?d=mm&s=16",
+                "24x24": "https://www.gravatar.com/avatar/5c69e27e1411619a01af4a9d48f0b4c2?d=mm&s=24",
+                "32x32": "https://www.gravatar.com/avatar/5c69e27e1411619a01af4a9d48f0b4c2?d=mm&s=32",
+                "48x48": "https://www.gravatar.com/avatar/5c69e27e1411619a01af4a9d48f0b4c2?d=mm&s=48"
+            },
+            "displayName": "Bruno Oliveira",
+            "emailAddress": "bruno@esss.co",
+            "key": "bruno",
+            "name": "bruno",
+            "self": "https://eden.esss.co/jira/rest/api/2/user?username=bruno",
+            "timeZone": "America/Sao_Paulo"
+        },
+        "attachment": [],
+        "comment": {
+            "comments": [],
+            "maxResults": 0,
+            "startAt": 0,
+            "total": 0
+        },
+        "components": [],
+        "created": "2022-08-15T16:18:02.000-0300",
+        "creator": {
+            "active": true,
+            "avatarUrls": {
+                "16x16": "https://www.gravatar.com/avatar/2946b7d4505245fcbd9bd64dcdefe366?d=mm&s=16",
+                "24x24": "https://www.gravatar.com/avatar/2946b7d4505245fcbd9bd64dcdefe366?d=mm&s=24",
+                "32x32": "https://www.gravatar.com/avatar/2946b7d4505245fcbd9bd64dcdefe366?d=mm&s=32",
+                "48x48": "https://www.gravatar.com/avatar/2946b7d4505245fcbd9bd64dcdefe366?d=mm&s=48"
+            },
+            "displayName": "Jaime Ambrus",
+            "emailAddress": "jaime@esss.co",
+            "key": "jaime",
+            "name": "jaime",
+            "self": "https://eden.esss.co/jira/rest/api/2/user?username=jaime",
+            "timeZone": "America/Sao_Paulo"
+        },
+        "customfield_10000": null,
+        "customfield_10002": null,
+        "customfield_10004": "9223372036854775807",
+        "customfield_10005": [
+            "com.atlassian.greenhopper.service.sprint.Sprint@69b79872[id=3341,rapidViewId=59,state=CLOSED,name=SSRL: Sprint 106,startDate=2022-10-11T10:09:00.000-03:00,endDate=2022-11-08T10:09:00.000-03:00,completeDate=2022-11-08T10:06:08.754-03:00,activatedDate=2022-10-11T10:47:13.187-03:00,sequence=3341,goal=,autoStartStop=false,synced=false]",
+            "com.atlassian.greenhopper.service.sprint.Sprint@4c5199e6[id=3343,rapidViewId=59,state=CLOSED,name=SSRL: Sprint 107,startDate=2022-11-08T10:28:00.000-03:00,endDate=2022-12-06T10:28:00.000-03:00,completeDate=2022-12-06T10:10:26.864-03:00,activatedDate=2022-11-08T10:22:18.994-03:00,sequence=3343,goal=,autoStartStop=false,synced=false]",
+            "com.atlassian.greenhopper.service.sprint.Sprint@745869c1[id=3535,rapidViewId=59,state=ACTIVE,name=SSRL: Sprint 111,startDate=2023-02-28T17:34:00.000-03:00,endDate=2023-04-03T17:34:00.000-03:00,completeDate=<null>,activatedDate=2023-02-28T10:30:33.170-03:00,sequence=3535,goal=<null>,autoStartStop=false,synced=false]"
+        ],
+        "customfield_10006": "SSRL-4502",
+        "customfield_10301": null,
+        "customfield_10310": null,
+        "customfield_10600": "Could you briefly describe what has been done to resolve this issue?",
+        "customfield_10700": [
+            {
+                "disabled": false,
+                "id": "10300",
+                "self": "https://eden.esss.co/jira/rest/api/2/customFieldOption/10300",
+                "value": "All"
+            }
+        ],
+        "customfield_11400": "2|hzoq3b:i0008zm",
+        "customfield_12200": null,
+        "customfield_13400": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@648b5eaa[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@41b5e828[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@169215ba[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@78085be8[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@49110c7f[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@72f89789[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@74c173a9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@4eaca1c2[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@f1f2e9c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@396da429[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@46ced496[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@6d47cf3c[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+        "customfield_13700": "2022-08-15",
+        "customfield_14000": null,
+        "customfield_14001": null,
+        "customfield_14002": null,
+        "customfield_14003": null,
+        "customfield_14502": [],
+        "customfield_14503": null,
+        "description": "Since in the User Defined Runs option for SA all possible runs are assembled in the matrix of runs, the Local SA will be a subset of this larger matrix of runs. In theory a Tornado can be assembled for that larger matrix taking in consideration only the runs where a single variable is changed. For this the user would need to define which is the base case and the QoI's.\r\n\r\nQuestions are:\r\n * How to define the base case in a list of multiple values for each variable\r\n * How to display the result in a tornado if there might be more than one run in the upper/lower part of the tornado\r\n * How to select the QoI? Maybe the same way as for the Local SA?",
+        "duedate": null,
+        "fixVersions": [],
+        "issuelinks": [],
+        "issuetype": {
+            "avatarId": 11215,
+            "description": "Created by Jira Software - do not edit or delete. Issue type for a user story.",
+            "iconUrl": "https://eden.esss.co/jira/secure/viewavatar?size=xsmall&avatarId=11215&avatarType=issuetype",
+            "id": "7",
+            "name": "Story",
+            "self": "https://eden.esss.co/jira/rest/api/2/issuetype/7",
+            "subtask": false
+        },
+        "labels": [],
+        "lastViewed": null,
+        "priority": {
+            "iconUrl": "https://eden.esss.co/jira/images/icons/priorities/major.svg",
+            "id": "3",
+            "name": "Major",
+            "self": "https://eden.esss.co/jira/rest/api/2/priority/3"
+        },
+        "progress": {
+            "progress": 0,
+            "total": 0
+        },
+        "project": {
+            "avatarUrls": {
+                "16x16": "https://eden.esss.co/jira/secure/projectavatar?size=xsmall&pid=10607&avatarId=10404",
+                "24x24": "https://eden.esss.co/jira/secure/projectavatar?size=small&pid=10607&avatarId=10404",
+                "32x32": "https://eden.esss.co/jira/secure/projectavatar?size=medium&pid=10607&avatarId=10404",
+                "48x48": "https://eden.esss.co/jira/secure/projectavatar?pid=10607&avatarId=10404"
+            },
+            "id": "10607",
+            "key": "SSRL",
+            "name": "SourSimRL",
+            "projectCategory": {
+                "description": "DEV Projects",
+                "id": "10200",
+                "name": "DEV",
+                "self": "https://eden.esss.co/jira/rest/api/2/projectCategory/10200"
+            },
+            "projectTypeKey": "software",
+            "self": "https://eden.esss.co/jira/rest/api/2/project/10607"
+        },
+        "reporter": {
+            "active": true,
+            "avatarUrls": {
+                "16x16": "https://www.gravatar.com/avatar/2946b7d4505245fcbd9bd64dcdefe366?d=mm&s=16",
+                "24x24": "https://www.gravatar.com/avatar/2946b7d4505245fcbd9bd64dcdefe366?d=mm&s=24",
+                "32x32": "https://www.gravatar.com/avatar/2946b7d4505245fcbd9bd64dcdefe366?d=mm&s=32",
+                "48x48": "https://www.gravatar.com/avatar/2946b7d4505245fcbd9bd64dcdefe366?d=mm&s=48"
+            },
+            "displayName": "Jaime Ambrus",
+            "emailAddress": "jaime@esss.co",
+            "key": "jaime",
+            "name": "jaime",
+            "self": "https://eden.esss.co/jira/rest/api/2/user?username=jaime",
+            "timeZone": "America/Sao_Paulo"
+        },
+        "resolution": null,
+        "resolutiondate": null,
+        "status": {
+            "description": "Incoming issues that have not been confirmed/planned yet.",
+            "iconUrl": "https://eden.esss.co/jira/images/icons/statuses/generic.png",
+            "id": "10006",
+            "name": "Inbox",
+            "self": "https://eden.esss.co/jira/rest/api/2/status/10006",
+            "statusCategory": {
+                "colorName": "default",
+                "id": 2,
+                "key": "new",
+                "name": "To Do",
+                "self": "https://eden.esss.co/jira/rest/api/2/statuscategory/2"
+            }
+        },
+        "subtasks": [],
+        "summary": "[User Def. Runs] Investigate if Tornado plots can be generated in this option",
+        "timeestimate": null,
+        "timeoriginalestimate": null,
+        "timespent": null,
+        "timetracking": {},
+        "updated": "2023-03-14T09:47:04.000-0300",
+        "versions": [],
+        "votes": {
+            "hasVoted": false,
+            "self": "https://eden.esss.co/jira/rest/api/2/issue/SSRL-4612/votes",
+            "votes": 0
+        },
+        "watches": {
+            "isWatching": false,
+            "self": "https://eden.esss.co/jira/rest/api/2/issue/SSRL-4612/watchers",
+            "watchCount": 2
+        },
+        "worklog": {
+            "maxResults": 20,
+            "startAt": 0,
+            "total": 0,
+            "worklogs": []
+        },
+        "workratio": -1
+    },
+    "id": "304856",
+    "key": "SSRL-4612",
+    "self": "https://eden.esss.co/jira/rest/api/2/issue/304856"
+}

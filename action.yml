@@ -1,0 +1,60 @@
+---
+name: QA check list
+description: Verifies if the current branch needs additional QA, based on the issue type (Story).
+author: Bruno Oliveira
+branding:
+  icon: package
+  color: purple
+
+inputs:
+  jira_url:
+    description: JIRA URL to look for issues.
+    required: false
+    default: "https://eden.esss.co/jira"
+  jira_username:
+    description: JIRA user name.
+    required: true
+  jira_password:
+    description: JIRA password.
+    required: true
+  github_token:
+    description: Token for generic bot which will be used to post comments to PRs.
+    required: true
+  ping_users:
+    description: List of usernames separated by `,` (without `@`), which will be pinged by the comment.
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v4
+      id: python-qacl
+      with:
+        python-version: "3.x"
+        update-environment: false
+
+    - name: Create venv
+      run: ${{ steps.python-qacl.outputs.python-path }} -Im venv /tmp/qacl
+      shell: bash
+
+    - name: Install dependencies
+      run: >
+        /tmp/qacl/bin/python
+        -Im pip
+        --disable-pip-version-check
+        --no-python-version-warning
+        install ${{ github.action_path }}
+      shell: bash
+
+    - run: >
+        /tmp/qacl/bin/python
+        ${{ github.action_path }}/src/qa_checklist.py
+        ${{ github.head_ref }}
+        ${{ inputs.ping_users }}
+        ${{ inputs.github_token }}
+        ${{ inputs.jira_url }}
+        ${{ inputs.jira_username }}
+        ${{ inputs.jira_password }}
+        ${{ github.repository }}
+        ${{ github.event.number }}
+      shell: bash
