@@ -1,0 +1,7 @@
+## QA Check ##
+
+Because issue is of type Story.
+
+- [ ] Manual QA required.
+
+cc @user1, @user2.
