@@ -21,7 +21,10 @@ inputs:
     description: Token for generic bot which will be used to post comments to PRs.
     required: true
   ping_users:
-    description: List of usernames separated by `,` (without `@`), which will be pinged by the comment.
+    description: List of usernames (without `@`) which will be pinged by the comment, separated by `,`.
+    required: true
+  issue_types:
+    description: List of issue types considered for QA, separated by `,`.
     required: true
 
 runs:
@@ -51,6 +54,7 @@ runs:
         ${{ github.action_path }}/src/qa_checklist.py
         ${{ github.head_ref }}
         ${{ inputs.ping_users }}
+        ${{ inputs.issue_types }}
         ${{ inputs.github_token }}
         ${{ inputs.jira_url }}
         ${{ inputs.jira_username }}

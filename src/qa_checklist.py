@@ -64,6 +64,7 @@ def entry_point(
     jira_url: str,
     jira_username: str,
     jira_password: str,
+    issue_types: Sequence[str],
 ) -> None:
     """Main job of this action."""
     issue_id = extract_issue_id(branch)
@@ -79,9 +80,10 @@ def entry_point(
         username=jira_username,
         password=jira_password,
     )
+    print(f"Checking for issue types: {issue_types}")
     print(f"Issue type: {issue_type}")
-    if issue_type != "Story":
-        print("Not a Story, quitting...")
+    if issue_type not in issue_types:
+        print(f"{issue_type} not in {issue_types}, quitting...")
         return
 
     reason = (
@@ -104,6 +106,7 @@ def main(argv: Sequence[str]) -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("branch")
     parser.add_argument("ping_users")
+    parser.add_argument("issue_types")
     parser.add_argument("token")
     parser.add_argument("jira_url")
     parser.add_argument("jira_username")
@@ -114,7 +117,8 @@ def main(argv: Sequence[str]) -> None:
     owner, repository = ns.slug.split("/")
     entry_point(
         branch=ns.branch,
-        ping_users=tuple(x.strip() for x in ns.ping_users.split(",")),
+        ping_users=split_name_list(ns.ping_users),
+        issue_types=split_name_list(ns.issue_types),
         token=ns.token,
         owner=owner,
         repository=repository,
@@ -123,6 +127,11 @@ def main(argv: Sequence[str]) -> None:
         jira_username=ns.jira_username,
         jira_password=ns.jira_password,
     )
+
+
+def split_name_list(s: str) -> Sequence[str]:
+    """Splits a string with comma separated names into a list of names."""
+    return tuple(x.strip() for x in s.split(","))
 
 
 if __name__ == "__main__":
